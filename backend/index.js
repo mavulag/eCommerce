@@ -5,7 +5,8 @@ import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 
 // Utils
-import connectDB from './config/db';
+// console.log('Importing connectDB from:', './config/db.js');
+import connectDB from './config/db.js';
 
 // Load environment variables from .env file
 dotenv.config();
