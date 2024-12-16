@@ -29,10 +29,8 @@ app.use(express.urlencoded({ extended: true }));
 // Middleware to parse cookies
 app.use(cookieParser());
 
-// Define a simple route that responds with "Hello World!"
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+// Define api
+app.use("/api/users", userRoutes);
 
 // Start the server and listen on the specified port
 app.listen(port, () => console.log(`Server running on port: ${port}`));
