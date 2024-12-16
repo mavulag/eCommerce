@@ -8,6 +8,9 @@ import cookieParser from "cookie-parser";
 // console.log('Importing connectDB from:', './config/db.js');
 import connectDB from "./config/db.js";
 
+// Get userRoutes
+import userRoutes from "./routes/userRoutes.js";
+
 // Load environment variables from .env file
 dotenv.config();
 
