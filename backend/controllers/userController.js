@@ -1,8 +1,8 @@
 // Get user model
-import User from "../models/userModel";
+import User from "../models/userModel.js";
 
 // Get asyncHandler
-import asyncHandler from "../middlewares/asyncHandler";
+import asyncHandler from "../middlewares/asyncHandler.js";
 
 // Start creating User
 const createUser = asyncHandler(async (req, res) => {

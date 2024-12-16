@@ -2,7 +2,7 @@
 import express from "express";
 
 // Get userCreate controller
-import { createUser } from "../controllers/userController";
+import { createUser } from "../controllers/userController.js";
 
 //
 const router = express.Router();

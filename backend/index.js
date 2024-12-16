@@ -6,7 +6,7 @@ import cookieParser from "cookie-parser";
 
 // Utils
 // console.log('Importing connectDB from:', './config/db.js');
-import connectDB from "./config/db.js";
+import { connectDB } from "./config/db.js";
 
 // Get userRoutes
 import userRoutes from "./routes/userRoutes.js";
@@ -14,14 +14,14 @@ import userRoutes from "./routes/userRoutes.js";
 // Load environment variables from .env file
 dotenv.config();
 
+// Create an instance of an Express application
+const app = express();
+
 // Set the port number from environment variables or default to 5000
 const port = process.env.PORT || 5000;
 
 // Connect to the database
 connectDB();
-
-// Create an instance of an Express application
-const app = express();
 
 // Middleware to parse JSON bodies
 app.use(express.json());
